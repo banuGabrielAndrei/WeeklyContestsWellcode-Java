@@ -6,10 +6,10 @@ public class Problem3 {
 
   public static void main(String[] args) {
     var scanner = new Scanner(System.in);
-    int sumKg = 0;
-    int sumSaci = 0;
+    Long sumKg = 0L;
+    Long sumSaci = 0L;
     while (scanner.hasNextLine()) {
-      int number = 0;
+      Long number = 0L;
       String text = scanner.nextLine();
       if (text.contains("saci")) {
         for (int i = 0; i < text.length(); ++i) {
@@ -18,7 +18,7 @@ public class Problem3 {
           }
         }
         sumSaci += number;
-        number = 0;
+        number = 0L;
       }
       if (text.contains("kilograme")) {
         for (int i = 0; i < text.length(); ++i) {
@@ -28,7 +28,7 @@ public class Problem3 {
         }
       }
       sumKg += number;
-      number = 0;
+      number = 0L;
     }
     System.out.println(sumSaci + " " + sumKg);
   }
