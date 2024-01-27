@@ -19,9 +19,9 @@ public class Problem1 {
       isMountain = false;
     }
     if (isMountain) {
-      System.out.println(v[2]);
+      System.out.print(v[2]);
     } else {
-      System.out.println(v[0]);
+      System.out.print(v[0]);
     }
   }
 }
